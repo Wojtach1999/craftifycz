@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Craftify.cz • Pravidla</title>
+  <meta name="description" content="Pravidla serveru Craftify.cz">
+  <meta name="theme-color" content="#34d399">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">Craftify</span>
+        <span class="badge">Survival • Economy</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="mc-btn">Domů</a>
+        <a href="rules.html" class="mc-btn" aria-current="page">Pravidla</a>
+        <a href="vote.html" class="mc-btn">Hlasování</a>
+        <a href="https://discord.gg/TYbaN2tG3k" target="_blank" rel="noopener" class="mc-btn ghost">Discord</a>
+        <a class="mc-btn primary donate" href="https://platby.hostify.cz/43070" target="_blank" rel="noopener">Podpořit</a>
+      </nav>
+      <div class="mobile-nav">
+        <select id="mobile-nav-select" aria-label="Navigace">
+          <option value="index.html">Domů</option>
+          <option value="rules.html" selected>Pravidla</option>
+          <option value="vote.html">Hlasování</option>
+          <option value="https://discord.gg/TYbaN2tG3k">Discord</option>
+          <option value="https://platby.hostify.cz/43070">Podpořit</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Pravidla serveru</h1>
+          <p class="tagline">Dodržováním pravidel chráníš komunitu a ekonomiku serveru.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <div class="card mc-card">
+          <h3>Pravidla</h3>
+          <div class="rows">
+            <div class="row"><div class="left"><span class="label">1</span><span class="value">Respektuj ostatní hráče a staff.</span></div></div>
+            <div class="row"><div class="left"><span class="label">2</span><span class="value">Žádné griefování, krádeže nebo podvody v obchodování.</span></div></div>
+            <div class="row"><div class="left"><span class="label">3</span><span class="value">Nepoužívej bugy, duplicitní módy nebo cheatování.</span></div></div>
+            <div class="row"><div class="left"><span class="label">4</span><span class="value">Hraj fér a respektuj ekonomiku serveru.</span></div></div>
+            <div class="row"><div class="left"><span class="label">5</span><span class="value">Neprodávej ani nekupuj itemy za reálné peníze.</span></div></div>
+            <div class="row"><div class="left"><span class="label">6</span><span class="value">Používej /shop k nákupu a prodeji, spolupracuj s ostatními.</span></div></div>
+            <div class="row"><div class="left"><span class="label">7</span><span class="value">Dodržuj pravidla chování a nevhodný obsah není povolen.</span></div></div>
+            <div class="row"><div class="left"><span class="label">8</span><span class="value">Nezabíjej bezdůvodně hráče.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>IP: play.craftify.cz</span>
+        <span>Discord: <a href="https://discord.gg/TYbaN2tG3k" target="_blank" rel="noopener">Připojit</a></span>
+      </div>
+      <div class="footer-right">
+        <span>© Craftify.cz</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

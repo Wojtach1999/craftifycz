@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Craftify.cz • Minecraft Survival Economy</title>
+  <meta name="description" content="Craftify.cz • Minecraft Survival Economy server. Připoj se na play.craftify.cz. Hlasuj, spoj se na Discordu a podpoř server.">
+  <meta name="theme-color" content="#34d399">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">Craftify</span>
+        <span class="badge">Survival • Economy</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="mc-btn" aria-current="page">Domů</a>
+        <a href="rules.html" class="mc-btn">Pravidla</a>
+        <a href="vote.html" class="mc-btn">Hlasování</a>
+        <a href="https://discord.gg/TYbaN2tG3k" target="_blank" rel="noopener" class="mc-btn ghost">Discord</a>
+        <a class="mc-btn primary donate" href="https://platby.hostify.cz/43070" target="_blank" rel="noopener">Podpořit</a>
+      </nav>
+      <div class="mobile-nav">
+        <select id="mobile-nav-select" aria-label="Navigace">
+          <option value="index.html">Domů</option>
+          <option value="rules.html">Pravidla</option>
+          <option value="vote.html">Hlasování</option>
+          <option value="https://discord.gg/TYbaN2tG3k">Discord</option>
+          <option value="https://platby.hostify.cz/43070">Podpořit</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="play">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Vítej na Craftify.cz</h1>
+          <p class="tagline">Survival Economy, přátelská komunita, férový systém a pravidelné eventy.</p>
+          <div class="status-card mc-card">
+            <div class="status-left">
+              <span class="status-dot" id="status-dot"></span>
+              <span id="status-text">Načítání stavu…</span>
+            </div>
+            <div class="status-right">
+              <span id="player-count">0</span>
+              <span class="sep">/</span>
+              <span id="player-max">0</span>
+              <span class="ver" id="server-version">1.21.10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container grid">
+        <div class="card mc-card">
+          <h3>Java Edition</h3>
+          <div class="rows">
+            <div class="row">
+              <div class="left">
+                <span class="label">Hlavní IP</span>
+                <span class="value"><span class="ip-chip">play.craftify.cz</span></span>
+              </div>
+              <div class="right">
+                <button class="mc-btn ghost copy-btn" data-copy="play.craftify.cz">Kopírovat</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                <span class="label">Náhradní IP</span>
+                <span class="value"><span class="ip-chip">94.112.255.118:37480</span></span>
+              </div>
+              <div class="right">
+                <button class="mc-btn ghost copy-btn" data-copy="94.112.255.118:37480">Kopírovat</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                <span class="label">Verze</span>
+                <span class="value"><span class="ip-chip">1.21.10</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mc-card">
+          <h3>Bedrock Edition</h3>
+          <div class="rows">
+            <div class="row">
+              <div class="left">
+                <span class="label">Hlavní IP</span>
+                <span class="value"><span class="ip-chip">mcpe.craftify.cz:37482</span></span>
+              </div>
+              <div class="right">
+                <button class="mc-btn ghost copy-btn" data-copy="mcpe.craftify.cz:37482">Kopírovat</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                <span class="label">Náhradní IP</span>
+                <span class="value"><span class="ip-chip">94.112.255.118:37482</span></span>
+              </div>
+              <div class="right">
+                <button class="mc-btn ghost copy-btn" data-copy="94.112.255.118:37482">Kopírovat</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                <span class="label">Verze</span>
+                <span class="value"><span class="ip-chip">Nejnovější</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span>IP: play.craftify.cz</span>
+        <span>Discord: <a href="https://discord.gg/TYbaN2tG3k" target="_blank" rel="noopener">Připojit</a></span>
+      </div>
+      <div class="footer-right">
+        <span>© Craftify.cz</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
